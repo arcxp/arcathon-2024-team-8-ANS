@@ -59,7 +59,7 @@
       "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_geo.json"
     },
     "address": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_address.json"
+      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/additional_information/resources/schema/ans/0.10.10/traits/trait_address.json"
     },
     "editor_note": {
       "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_editor_note.json"
