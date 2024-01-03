@@ -3,6 +3,7 @@
   "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_address.json",
   "title": "Address",
   "description": "An Address following the convention of http://microformats.org/wiki/hcard",
+  "composer": "Address",
   "type": "object",
   "additionalProperties": false,
   "properties": {
