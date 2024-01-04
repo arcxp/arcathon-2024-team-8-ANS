@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_alignment.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_alignment.json",
   "title": "Alignment",
   "type": "string",
   "description": "A property used to determine horizontal positioning of a content element relative to the elements that immediately follow it in the element sequence.",

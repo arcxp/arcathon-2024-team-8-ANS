@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_headlines.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_headlines.json",
   "title": "Headlines",
   "description": "The headline(s) or title for this content.  The 'basic' key is required.",
   "type": "object",
-  "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/dictionary.json",
+  "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/dictionary.json",
   "composer": {
     "fieldName": "Working headline"
   }

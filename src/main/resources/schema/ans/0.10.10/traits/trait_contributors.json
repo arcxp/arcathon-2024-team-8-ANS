@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_contributors.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_contributors.json",
   "title": "Contributors",
   "description": "Trait that holds information on who created and contributed to a given document in Arc.",
   "type": "object",

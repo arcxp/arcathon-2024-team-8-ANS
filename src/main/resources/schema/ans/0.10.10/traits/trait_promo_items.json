@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_promo_items.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_promo_items.json",
   "title": "Promo Items",
   "type": "object",
   "description": "Lists of promotional content to use when highlighting the story. In the Arc ecosystem, references in these lists will be denormalized.",
@@ -11,16 +11,16 @@
     "basic": {
       "oneOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/content.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/content.json"
         },
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
         },
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/raw_html.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/raw_html.json"
         },
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/custom_embed.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/custom_embed.json"
         }
       ]
     },
@@ -32,16 +32,16 @@
     ".*": {
       "oneOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/content.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/content.json"
         },
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
         },
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/raw_html.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/raw_html.json"
         },
         {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/custom_embed.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/story_elements/custom_embed.json"
         }
       ]
     },

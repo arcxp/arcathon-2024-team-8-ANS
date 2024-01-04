@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_revision.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_revision.json",
   "title": "Revision",
   "description": "Trait that applies revision information to a document. In the Arc ecosystem, many of these fields are populated in stories by the Story API.",
   "type": "object",
@@ -55,7 +55,7 @@
       }
     },
     "additional_properties": {
-      "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
+      "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
     }
   }
 }

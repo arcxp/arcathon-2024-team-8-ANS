@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_credits.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_credits.json",
   "title": "Credit trait",
   "type": "object",
   "description": "A list of people and groups attributed to this content, keyed by type of contribution. In the Arc ecosystem, references in this list will be denormalized into author objects from the arc-author-service.",
@@ -16,10 +16,10 @@
         "type": "object",
         "anyOf": [
           {
-            "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/author.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/author.json"
           },
           {
-            "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
           }
         ]
       }
@@ -33,10 +33,10 @@
         "type": "object",
         "anyOf": [
           {
-            "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/author.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/author.json"
           },
           {
-            "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
           }
         ]
       }
@@ -50,10 +50,10 @@
         "type": "object",
         "anyOf": [
           {
-            "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/author.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/author.json"
           },
           {
-            "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
           }
         ]
       }

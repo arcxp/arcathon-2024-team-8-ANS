@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_label.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_label.json",
   "title": "Label",
   "description": "What the Washington Post calls a Kicker",
   "type": "object",
@@ -39,7 +39,7 @@
           }
         },
         "additional_properties": {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
         }
       },
       "required": [ "text" ]
@@ -64,7 +64,7 @@
           "description": "If false, this label should be hidden."
         },
         "additional_properties": {
-          "$ref": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
         }
       },
       "required": [ "text" ]
