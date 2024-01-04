@@ -1,10 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_syndication.json",
+  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_syndication.json",
 
   "title": "Syndication",
   "type": "object",
   "description": "Key-boolean pair of syndication services where this article may go",
+  "composer": {
+    "fieldName": "Syndication"
+  },
   "patternProperties": {
     ".*": {
       "type": "boolean"
@@ -13,11 +16,17 @@
   "properties": {
     "external_distribution": {
       "description": "Necessary for fulfilling contractual agreements with third party clients",
-      "type": "boolean"
+      "type": "boolean",
+      "composer": {
+        "fieldName": "External distribution"
+      }
     },
     "search": {
       "description": "Necessary so that we can filter out all articles that editorial has deemed should not be discoverable via search",
-      "type": "boolean"
+      "type": "boolean",
+      "composer": {
+        "fieldName": "Visible to search"
+      }
     }
   }
 }

@@ -1,31 +1,49 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_content_restrictions.json",
+  "id": "https://raw.githubusercontent.com/WPMedia/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_content_restrictions.json",
   "title": "Content Restrictions",
   "description": "Trait that applies contains the content restrictions of an ANS object.",
   "type": "object",
+  "composer": {
+    "fieldName": "Paywall status"
+  },
   "properties":{
     "content_code":{
       "type": "string",
-      "description": "The content restriction code/level/flag associated with the ANS object"
+      "description": "The content restriction code/level/flag associated with the ANS object",
+      "composer": {
+        "fieldName": "Paywall status"
+      }
     },
     "embargo": {
       "description": "Embargo configuration to enforce publishing restrictions. Embargoed content must not go live.",
       "type": "object",
       "additionalProperties": false,
+      "composer": {
+        "fieldName": null
+      },
       "properties": {
         "active": {
           "type": "boolean",
-          "description": "The boolean flag to indicate if the embargo is active or not. If this field is false, ignore the embargo."
+          "description": "The boolean flag to indicate if the embargo is active or not. If this field is false, ignore the embargo.",
+          "composer": {
+            "fieldName": null
+          }
         },
         "end_time": {
           "type": "string",
           "format": "date-time",
-          "description": "An optional end time for the embargo to indicate when it ends. When it's not defined, it means the embargo keeps applying. The end time should be ignored if active flag is false."
+          "description": "An optional end time for the embargo to indicate when it ends. When it's not defined, it means the embargo keeps applying. The end time should be ignored if active flag is false.",
+          "composer": {
+            "fieldName": null
+          }
         },
         "description": {
           "description": "An optional description for the embargo.",
-          "type": "string"
+          "type": "string",
+          "composer": {
+            "fieldName": null
+          }
         }
       },
       "required": [ "active" ]
@@ -34,12 +52,18 @@
       "type": "object",
       "description": "Geo-Restriction configuration that contains the restriction ids that this content should be associated with.",
       "additionalProperties": false,
+      "composer": {
+        "fieldName": null
+      },
       "properties": {
         "restrictions": {
           "type": "array",
           "description": "An array containing the geo-restriction objects. Limited to a size of 1 for now.",
           "minItems": 1,
           "maxItems": 1,
+          "composer": {
+            "fieldName": null
+          },
           "items": {
             "type": "object",
             "description": "An object specifying the _id of the restriction this content should be associated with.",
