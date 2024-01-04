@@ -1,43 +1,61 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_taxonomy.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_taxonomy.json",
   "title": "Taxonomy",
   "description": "Holds the collection of tags, categories, keywords, etc that describe content.",
   "type": "object",
+  "composer": {
+    "fieldName": "multiple"
+  },
   "additionalProperties": false,
   "properties": {
     "keywords": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/keyword.json"
+        "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/keyword.json"
       },
-      "description": "A list of keywords. In the Arc ecosystem, this list is populated by Clavis."
+      "description": "A list of keywords. In the Arc ecosystem, this list is populated by Clavis.",
+      "composer": {
+        "fieldName": null
+      }
     },
     "named_entities": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/named_entity.json"
+        "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/named_entity.json"
       },
-      "description": "A list of named entities. In the Arc ecosystem, this list is populated by Clavis."
+      "description": "A list of named entities. In the Arc ecosystem, this list is populated by Clavis.",
+      "composer": {
+        "fieldName": null
+      }
     },
     "topics": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/topic.json"
+        "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/topic.json"
       },
-      "description": "A list of topics. In the Arc ecosystem, this list is populated by Clavis."
+      "description": "A list of topics. In the Arc ecosystem, this list is populated by Clavis.",
+      "composer": {
+        "fieldName": null
+      }
     },
     "auxiliaries": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/auxiliary.json"
+        "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/auxiliary.json"
       },
-      "description": "A list of auxiliaries. In the Arc ecosystem, this list is populated by Clavis."
+      "description": "A list of auxiliaries. In the Arc ecosystem, this list is populated by Clavis.",
+      "composer": {
+        "fieldName": null
+      }
     },
     "tags": {
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/tag.json"
+        "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/tag.json"
+      },
+      "composer": {
+        "fieldName": "Story tags"
       }
     },
 
@@ -45,12 +63,12 @@
       "description": "Deprecated in 0.10.10. (See `primary_section` instead.) A primary site object or reference to one. In the Arc ecosystem, a reference here is denormalized into a site from the arc-site-service.",
       "oneOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/site.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/site.json"
         },
         {
           "allOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+              "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
             },
             {
               "properties": {
@@ -65,19 +83,22 @@
             }
           ]
         }
-      ]
+      ],
+      "composer": {
+        "fieldName": "Manage Circulations Primary Website"
+      }
     },
 
     "primary_section": {
       "description": "A primary section object or reference to one. In the Arc ecosystem, a reference here is denormalized into a site from the arc-site-service.",
       "oneOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/section.json"
+          "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/section.json"
         },
         {
           "allOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+              "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
             },
             {
               "properties": {
@@ -92,7 +113,10 @@
             }
           ]
         }
-      ]
+      ],
+      "composer": {
+        "fieldName": "Manage Circulations Sections"
+      }
     },
 
     "sites": {
@@ -101,12 +125,12 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/site.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/site.json"
           },
           {
             "allOf": [
               {
-                "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+                "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
               },
               {
                 "properties": {
@@ -122,6 +146,9 @@
             ]
           }
         ]
+      },
+      "composer": {
+        "fieldName": "Manage Circulations Add websites"
       }
     },
 
@@ -131,12 +158,12 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/section.json"
+            "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/section.json"
           },
           {
             "allOf": [
               {
-                "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/utils/reference.json"
+                "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/utils/reference.json"
               },
               {
                 "properties": {
@@ -152,6 +179,9 @@
             ]
           }
         ]
+      },
+      "composer": {
+        "fieldName": "Manage Circulations Sections"
       }
     },
 
@@ -160,6 +190,9 @@
       "description": "A list of user-editable manually entered keywords for search purposes. In the Arc ecosystem, these can be generated and saved in source CMS systems, editors, etc.",
       "items": {
         "type": "string"
+      },
+      "composer": {
+        "fieldName": "SEO keywords"
       }
     },
     "stock_symbols": {
@@ -167,6 +200,9 @@
       "type": "array",
       "items": {
         "type": "string"
+      },
+      "composer": {
+        "fieldName": null
       }
     },
 
@@ -177,11 +213,14 @@
       "items": {
         "type": "string",
         "pattern": "^[0-9a-fA-F]{24}$"
+      },
+      "composer": {
+        "fieldName": null
       }
     },
 
     "additional_properties": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
+      "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
     }
 
   }

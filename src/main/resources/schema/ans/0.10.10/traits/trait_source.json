@@ -1,34 +1,52 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_source.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_source.json",
   "title": "Source",
   "description": "Information about the original source and/or owner of this content",
   "type": "object",
+  "composer": {
+    "fieldName": "Source"
+  },
   "additionalProperties": false,
   "properties": {
     "source_id": {
       "description": "The id of this content in a foreign CMS.",
-      "type":"string"
+      "type":"string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "source_type": {
       "type": "string",
-      "description": "Deprecated in 0.10.10. See `distributor.category` and `distributor.subcategory`. (Formerly: The method used to enter this content. E.g. 'staff', 'wires'.)"
+      "description": "Deprecated in 0.10.10. See `distributor.category` and `distributor.subcategory`. (Formerly: The method used to enter this content. E.g. 'staff', 'wires'.)",
+      "composer": {
+        "fieldName": "Source type (legacy)"
+      }
     },
     "name": {
       "type": "string",
-      "description": "Deprecated in  0.10.10. See `distributor.name`. (Formerly: The human-readable name of the organization who first produced this content. E.g., 'Reuters'.)"
+      "description": "Deprecated in  0.10.10. See `distributor.name`. (Formerly: The human-readable name of the organization who first produced this content. E.g., 'Reuters'.)",
+      "composer": {
+        "fieldName": null
+      }
     },
     "system": {
       "type": "string",
-      "description": "The software (CMS or editor) that was used to enter this content. E.g., 'wordpress', 'ellipsis'."
+      "description": "The software (CMS or editor) that was used to enter this content. E.g., 'wordpress', 'ellipsis'.",
+      "composer": {
+        "fieldName": "Source system"
+      }
     },
     "edit_url": {
       "type": "string",
-      "description": "A link to edit this content in its source CMS."
+      "description": "A link to edit this content in its source CMS.",
+      "composer": {
+        "fieldName": null
+      }
     },
 
     "additional_properties": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
+      "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
     }
   }
 }

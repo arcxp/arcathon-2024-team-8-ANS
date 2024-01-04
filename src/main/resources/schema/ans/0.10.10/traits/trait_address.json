@@ -1,34 +1,58 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_address.json",
+  "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_address.json",
   "title": "Address",
   "description": "An Address following the convention of http://microformats.org/wiki/hcard",
+  "composer": {
+    "fieldName": "Address"
+  },
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "post_office_box": {
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "extended_address": {
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "street_address": {
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "locality": {
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "region": {
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "postal_code": {
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "country_name": {
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "additional_properties": {
-      "$ref": "https://raw.githubusercontent.com/washingtonpost/ans-schema/master/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
+      "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"
     }
   },
   "dependencies": {
