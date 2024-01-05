@@ -4,34 +4,55 @@
   "title": "Revision",
   "description": "Trait that applies revision information to a document. In the Arc ecosystem, many of these fields are populated in stories by the Story API.",
   "type": "object",
+  "composer": {
+    "fieldName": "Revision history"
+  },
   "additionalProperties": false,
   "properties": {
     "revision_id": {
       "description": "The unique id of this revision.",
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "parent_id": {
       "description": "The unique id of the revision that this revisions was branched from, or preceded it on the current branch.",
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "branch": {
       "description": "The name of the branch this revision was created on.",
-      "type": "string"
+      "type": "string",
+      "composer": {
+        "fieldName": null
+      }
     },
     "editions": {
       "description": "A list of identifiers of editions that point to this revision.",
       "type": "array",
       "items": {
         "type": "string"
+      },
+      "composer": {
+        "fieldName": null
       }
     },
     "user_id": {
       "type": "string",
-      "description": "The unique user id of the person who created this revision."
+      "description": "The unique user id of the person who created this revision.",
+      "composer": {
+        "fieldName": null
+      }
     },
     "published": {
       "type": "boolean",
-      "description": "Whether or not this revision's parent story is published, in any form or place"
+      "description": "Whether or not this revision's parent story is published, in any form or place",
+      "composer": {
+        "fieldName": null
+      }
     },
     "additional_properties": {
       "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"

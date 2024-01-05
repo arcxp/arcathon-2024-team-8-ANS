@@ -6,5 +6,8 @@
   "type": "array",
   "items": {
     "type": "string"
+  },
+  "composer": {
+    "fieldName": null
   }
 }

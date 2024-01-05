@@ -4,5 +4,8 @@
   "title": "Publish_Date",
   "description": "When the story was published.",
   "type": "string",
-  "format": "date-time"
+  "format": "date-time",
+  "composer": {
+    "fieldName": "Publish date"
+  }
 }

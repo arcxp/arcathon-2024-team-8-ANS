@@ -4,19 +4,31 @@
   "title": "Contributors",
   "description": "Trait that holds information on who created and contributed to a given document in Arc.",
   "type": "object",
+  "composer": {
+    "fieldName": null
+  },
   "additionalProperties": false,
   "properties": {
     "created_by": {
       "description": "The Creator of the Document.",
       "type":"object",
+      "composer": {
+        "fieldName": null
+      },
       "properties": {
         "user_id": {
           "type": "string",
-          "description": "The unique ID of the Arc user who created the Document"
+          "description": "The unique ID of the Arc user who created the Document",
+          "composer": {
+            "fieldName": null
+          }
         },
         "display_name": {
           "type": "string",
-          "description": "The display name of the Arc user who created the Document"
+          "description": "The display name of the Arc user who created the Document",
+          "composer": {
+            "fieldName": null
+          }
         }
       }
     }

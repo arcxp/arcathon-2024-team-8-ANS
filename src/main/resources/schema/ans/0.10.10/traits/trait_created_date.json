@@ -4,5 +4,8 @@
   "title": "Created Date",
   "description": "When the content was originally created (RFC3339-formatted). In the Arc ecosystem, this will be automatically generated for stories in the Story API.",
   "type": "string",
-  "format": "date-time"
+  "format": "date-time",
+  "composer": {
+    "fieldName": "Created date"
+  }
 }

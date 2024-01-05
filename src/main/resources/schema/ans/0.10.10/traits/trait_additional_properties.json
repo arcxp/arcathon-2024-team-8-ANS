@@ -4,5 +4,8 @@
   "title": "Has additional properties",
   "description": "A grab-bag object for non-validatable data.",
   "type": "object",
-  "additionalProperties": {}
+  "additionalProperties": {},
+  "composer": {
+    "fieldName": null
+  }
 }

@@ -4,6 +4,9 @@
   "title": "Related_Content",
   "description": "Lists of content items or references this story is related to, arbitrarily keyed. In the Arc ecosystem, references in this object will be denormalized into the fully-inflated content objects they represent.",
   "type": "object",
+  "composer": {
+    "fieldName": null
+  },
   "properties": {
     "redirect": {
       "description": "An attached redirect. In Arc, when this content item is fetched by url, content api will instead return this redirect object with appropriate headers.  In all other cases, this content should be treated normally.",
@@ -12,6 +15,9 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/redirect.json"
       }
+    },
+    "composer": {
+      "fieldName": "Redirect URL"
     }
   },
   "patternProperties": {

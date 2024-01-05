@@ -4,5 +4,8 @@
   "title": "Alignment",
   "type": "string",
   "description": "A property used to determine horizontal positioning of a content element relative to the elements that immediately follow it in the element sequence.",
-  "enum": [ "left", "right", "center" ]
+  "enum": [ "left", "right", "center" ],
+  "composer": {
+    "fieldName": null
+  }
 }

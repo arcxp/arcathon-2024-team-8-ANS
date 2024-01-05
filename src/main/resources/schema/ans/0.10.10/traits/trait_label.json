@@ -4,24 +4,39 @@
   "title": "Label",
   "description": "What the Washington Post calls a Kicker",
   "type": "object",
+  "composer": {
+    "fieldName": "Kickers/labels"
+  },
   "additionalProperties": false,
   "properties": {
     "basic": {
       "description": "The default label object for this piece of content.",
       "type": "object",
       "additionalProperties": false,
+      "composer": {
+        "fieldName": null
+      },
       "properties": {
         "text": {
           "type": "string",
-          "description": "The text of this label."
+          "description": "The text of this label.",
+          "composer": {
+            "fieldName": null
+          }
         },
         "url": {
           "type": "string",
-          "description": "An optional destination url of this label."
+          "description": "An optional destination url of this label.",
+          "composer": {
+            "fieldName": null
+          }
         },
         "display": {
           "type": "boolean",
-          "description": "If false, this label should be hidden."
+          "description": "If false, this label should be hidden.",
+          "composer": {
+            "fieldName": null
+          }
         },
         "additional_properties": {
           "$ref": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_additional_properties.json"

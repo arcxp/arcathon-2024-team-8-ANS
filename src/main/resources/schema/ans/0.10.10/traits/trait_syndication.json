@@ -5,6 +5,9 @@
   "title": "Syndication",
   "type": "object",
   "description": "Key-boolean pair of syndication services where this article may go",
+  "composer": {
+    "fieldName": "Syndication"
+  },
   "patternProperties": {
     ".*": {
       "type": "boolean"
@@ -13,11 +16,17 @@
   "properties": {
     "external_distribution": {
       "description": "Necessary for fulfilling contractual agreements with third party clients",
-      "type": "boolean"
+      "type": "boolean",
+      "composer": {
+        "fieldName": "External distribution"
+      }
     },
     "search": {
       "description": "Necessary so that we can filter out all articles that editorial has deemed should not be discoverable via search",
-      "type": "boolean"
+      "type": "boolean",
+      "composer": {
+        "fieldName": "Visible to search"
+      }
     }
   }
 }

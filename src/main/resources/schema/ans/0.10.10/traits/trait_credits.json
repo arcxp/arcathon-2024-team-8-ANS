@@ -4,6 +4,9 @@
   "title": "Credit trait",
   "type": "object",
   "description": "A list of people and groups attributed to this content, keyed by type of contribution. In the Arc ecosystem, references in this list will be denormalized into author objects from the arc-author-service.",
+  "composer": {
+    "fieldName": "Author"
+  },
   "properties": {
     "by": {
       "title": "By",

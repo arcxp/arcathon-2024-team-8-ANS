@@ -3,5 +3,8 @@
   "id": "https://raw.githubusercontent.com/arcxp/arcathon-2024-team-8-ANS/main/src/main/resources/schema/ans/0.10.10/traits/trait_status.json",
   "title": "Status",
   "description": "Optional field to story story workflow related status (e.g. published/embargoed/etc)",
-  "type": "string"
+  "type": "string",
+  "composer": {
+    "fieldName": null
+  }
 }

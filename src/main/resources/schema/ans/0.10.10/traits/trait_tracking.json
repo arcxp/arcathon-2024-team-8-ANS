@@ -4,5 +4,8 @@
   "title": "Tracking",
   "description": "Tracking information, probably implementation-dependent",
   "type": "object",
+  "composer": {
+    "fieldName": null
+  },
   "additionalProperties": {}
 }
